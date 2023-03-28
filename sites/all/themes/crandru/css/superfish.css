@@ -1,0 +1,92 @@
+/*
+ * CSS file based on default simple-centre-aligned.css Superfish style
+ */
+
+.sf-menu.sf-style-simple-centre-aligned a,
+.sf-menu.sf-style-simple-centre-aligned a:visited,
+.sf-menu.sf-style-simple-centre-aligned span.nolink  {
+	color: #000;
+	font-family: 'Cinzel', 'Times New Roman', Times, serif;
+	font-size: 24px;
+	line-height: 24px;
+	padding: 0px 25px 10px 25px;
+	text-decoration: inherit;
+	text-shadow: inherit;
+}
+
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li {
+	border: inherit;
+}
+
+.sf-menu.sf-style-simple-centre-aligned li {
+	background: inherit;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sf-menu.sf-style-simple-centre-aligned li:hover,
+.sf-menu.sf-style-simple-centre-aligned li.sfHover,
+.sf-menu.sf-style-simple-centre-aligned li.active-trail {
+	background: inherit;
+	border-bottom: 5px solid #005632;
+}
+
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal > li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical > li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal > li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li li li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li li li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li > ul > li.firstandlast,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical.sf-total-items-1 > li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal.sf-total-items-1 > li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li > ul > li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li > ul > li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li:last-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar li li li li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-vertical li li:first-child,
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal li li li:first-child {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.sf-menu.sf-style-simple-centre-aligned.sf-horizontal > li,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li,
+.sf-menu.sf-style-simple-centre-aligned.sf-navbar > li > ul > li  {
+	padding: 0 0 10px 0 !important;
+}
+
+@media only screen and (min-width : 992px) and (max-width:  1199px) {
+	.sf-menu.sf-style-simple-centre-aligned a,
+	.sf-menu.sf-style-simple-centre-aligned a:visited,
+	.sf-menu.sf-style-simple-centre-aligned span.nolink  {
+		font-size: 22px;
+		line-height: 22px;
+		padding: 0px 20px 10px 20px;
+	}
+
+}
+
+@media only screen and (min-width : 768px) and (max-width:  991px) {
+	.sf-menu.sf-style-simple-centre-aligned a,
+	.sf-menu.sf-style-simple-centre-aligned a:visited,
+	.sf-menu.sf-style-simple-centre-aligned span.nolink  {
+		font-size: 18px;
+		line-height: 18px;
+		padding: 0px 15px 10px 15px;
+	}
+
+}
+
+
+
+

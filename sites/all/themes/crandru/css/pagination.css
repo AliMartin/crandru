@@ -1,0 +1,31 @@
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #003555;
+  border-color: #003555;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  color: #0065A1;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #003555;
+    border: 1px solid #003555;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #fff;
+    background-color: #0065A1;
+    border-color: #0065A1;
+}
+

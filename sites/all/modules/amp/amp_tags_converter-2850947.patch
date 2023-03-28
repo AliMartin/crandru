@@ -1,0 +1,48 @@
+diff --git a/modules/amp_text_format/amp_text_format.info b/modules/amp_text_format/amp_text_format.info
+new file mode 100755
+index 0000000..cf34d74
+--- /dev/null
++++ b/modules/amp_text_format/amp_text_format.info
+@@ -0,0 +1,9 @@
++name = AMP Text Format
++description = Convert html tags to amp-tags
++dependencies[] = amp
++
++version = "7.x-1.0"
++core = "7.x"
++project = "amp"
++
++
+diff --git a/modules/amp_text_format/amp_text_format.module b/modules/amp_text_format/amp_text_format.module
+new file mode 100755
+index 0000000..12c96da
+--- /dev/null
++++ b/modules/amp_text_format/amp_text_format.module
+@@ -0,0 +1,27 @@
++<?php
++
++function amp_text_format_filter_info()
++{
++    $filters = array();
++    $filters['amp_filter'] = array(
++        'title' => t('AMP tag converter'),
++        'description' => t('Convert html tags to amp-tags'),
++        'process callback'  => '_amp_filter_process',
++    );
++    return $filters;
++}
++
++function _amp_filter_process($text, $filter, $format)
++{
++    if (module_exists('amp') && amp_is_amp_request()) {
++        $text = str_ireplace(
++            ['<img','<video','/video>','<audio','/audio>'],
++            ['<amp-img','<amp-video','/amp-video>','<amp-audio','/amp-audio>'],
++            $text
++        );
++        
++        $text = preg_replace('/<amp-img(.*?)>/', '<amp-img$1></amp-img>', $text);
++    }
++    
++    return $text;
++}

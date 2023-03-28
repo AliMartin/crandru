@@ -1,0 +1,9 @@
+name = AMP Text Format
+description = Convert html tags to amp-tags
+dependencies[] = amp
+
+version = "7.x-1.0"
+core = "7.x"
+project = "amp"
+
+
