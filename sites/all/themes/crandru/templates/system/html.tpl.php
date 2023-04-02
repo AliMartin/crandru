@@ -85,6 +85,17 @@
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel|Lato:400,400i,700,700i" rel="stylesheet"> 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-25L0NNT1NB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-25L0NNT1NB');
+</script>
+
 <body<?php print $body_attributes; ?>>
 	<div id="skip-link">
 	<a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
